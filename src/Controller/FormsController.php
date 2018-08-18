@@ -2,7 +2,7 @@
 
 namespace App\Controller;
 
-use App\form\ContactType;
+use App\Form\ContactType;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\Routing\Annotation\Route;
 

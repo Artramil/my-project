@@ -6,15 +6,15 @@
     	<meta name="description" content="">
     	<meta name="author" content="">
         <title>{% block title %}Welcome!{% endblock %}</title>
-	        <link href='{asset{'packages/bootstrap/css/bootstrap.main.css'}}' rel="stylesheet">
+	        <link href='{{asset('packages/bootstrap/css/bootstrap.main.css')}}' rel="stylesheet">
 		    <!-- Custom fonts for this template -->
-		    <link href='{asset{'public/font-awesome/css/font-awesome.css'}}' rel="stylesheet" type="text/css">
-		    <link href='{asset{'public/magnific-popup/magnific-popup.css'}}' rel='stylesheet' type='text/css'>
+		    <link href='{{asset('/font-awesome/css/font-awesome.css')}}' rel="stylesheet" type="text/css">
+		    <link href='{{asset('/magnific-popup/magnific-popup.css')}}' rel='stylesheet' type='text/css'>
 		    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
 		    <!-- Plugin CSS -->
 		    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
 		    <!-- Custom styles for this template -->
-		    <link href="{asset{css/creative.css}}" rel="stylesheet">
+		    <link href='{{asset('css/creative.css')}}' rel="stylesheet">
         {% block stylesheets %}{% endblock %}
     </head>
 
@@ -71,7 +71,7 @@
     <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
     <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
     <!-- Custom scripts for this template -->
-    <script src='{asset{'public/js/creative.js'}}'></script>
+    <script src='{{asset('js/creative.js')}}'></script>
 
 	 {% block javascript %}{% endblock %}
 
